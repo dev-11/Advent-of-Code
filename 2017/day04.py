@@ -9,10 +9,8 @@ for row in rows:
 print(len(lines_without_duplicates))
 
 lines_without_anagrams = 0
-for line in lines_without_duplicates:
-    sorted_words = []
-    for word in line:
-        sorted_words.append(''.join(sorted(word)))
+for line in lines_without_duplicate:
+    sorted_words = [''.join(sorted(word)) for word in line]
     if len(sorted_words) == len(set(sorted_words)):
         lines_without_anagrams += 1
         
