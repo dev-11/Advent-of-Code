@@ -1,4 +1,4 @@
-numbers = [int(x) for x in open("day01.input").readlines()]
+numbers = [int(string_number) for string_number in open("day01.input").readlines()]
 
 # answer 1
 print(sum(numbers))
