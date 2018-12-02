@@ -24,8 +24,8 @@ for line1 in lines:
         if sum([char1 != char2 for char1, char2 in zip(line1, line2)]) == 1:
             result = ''.join([char1 for char1, char2 in zip(line1, line2) if char1 == char2])
             break
-        if result:
-            break
+    if result:
+        break
 
 # answer 2
 print(result)
